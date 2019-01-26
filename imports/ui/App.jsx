@@ -4,7 +4,6 @@ import ProviderProfile from './ProviderProfile.jsx';
 
 const App = () => (
   <div>
-    <h1>Welcome to Meteor!</h1>
     <Home />
     <ProviderProfile />
   </div>

@@ -9,3 +9,19 @@ body {
 	width: 10rem;
 	border: 2px solid purple;
 }
+
+.profile-button-container {
+	position: absolute;
+	border: 3px solid #979797;
+    top: 47px;
+    right: 47px;
+    width: 63px;
+  	height: 63px;
+  	overflow: hidden;
+  	border-radius: 50%;
+}
+
+.profile-button {
+	width: auto;
+	height: 63px;
+}
