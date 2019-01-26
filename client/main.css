@@ -2,3 +2,10 @@ body {
   padding: 10px;
   font-family: sans-serif;
 }
+
+.posting-card {
+	display: inline-block;
+	height: 10rem;
+	width: 10rem;
+	border: 2px solid purple;
+}
