@@ -17,11 +17,61 @@ body {
     min-height: 20rem;
 }
 
+.left {
+  float:left;
+}
+
+.right {
+  float:right;
+}
+
 .posting-card {
-	display: inline-block;
-	height: 10rem;
-	width: 10rem;
-	border: 2px solid purple;
+  display: inline-block;
+  position: relative;
+  margin: 1.3rem;
+  height: 10.5rem;
+  width: 12.8rem;
+  background-color: lightgrey;
+  color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  transition: ease all .4s;
+}
+
+.posting-name {
+  display: block;
+  bottom: 0;
+  position: absolute;
+  box-sizing: border-box;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 35px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.posting-top {
+  font-size: 10px;
+}
+
+.posting-bottom {
+  display: block;
+  bottom: 0;
+  position: absolute;
+  box-sizing: border-box;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+  background-color: #88ab75;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .posting-card {
+  margin: 0.7rem;
+  }
 }
 
 /*--- Profile Button styles ---*/

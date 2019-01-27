@@ -1,32 +1,9 @@
 import { Meteor } from 'meteor/meteor';
-import Links from '/imports/api/links';
 import Restaurant from '/imports/api/restaurant';
-
-function insertLink(title, url) {
-  Links.insert({ title, url, createdAt: new Date() });
-}
+import Address from '/imports/api/address';
+import Menu from '/imports/api/menu';
+import Deal from '/imports/api/deal';
 
 Meteor.startup(() => {
-  // If the Links collection is empty, add some data.
-  if (Links.find().count() === 0) {
-    insertLink(
-      'Do the Tutorial',
-      'https://www.meteor.com/tutorials/react/creating-an-app'
-    );
-
-    insertLink(
-      'Follow the Guide',
-      'http://guide.meteor.com'
-    );
-
-    insertLink(
-      'Read the Docs',
-      'https://docs.meteor.com'
-    );
-
-    insertLink(
-      'Discussions',
-      'https://forums.meteor.com'
-    );
-  }
+  
 });
