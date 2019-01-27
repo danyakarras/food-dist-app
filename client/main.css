@@ -1,6 +1,7 @@
 body {
   font-family: sans-serif;
   margin: 0;
+  padding: 0;
 }
 
 .page-width {
@@ -214,4 +215,39 @@ input[type=text].main-search-bar {
 	max-width: 504px;
 }
 
+/*--- NavBar styles ---*/
 
+.navbar {
+  background-color:#5b8260;
+  height: 6.5rem;
+  width: 100%;
+  padding: auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-profile-button-continer {
+  padding-right: 30px;
+  padding-left: 15px;
+}
+
+.navbar-search-container {
+  width: 100%;
+  margin-left: 150px;
+}
+
+.navbar-link {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  opacity: 0.6;
+}
+
+.activeLink {
+  opacity: 1;
+  font-weight: bold;
+  border-bottom: solid #ffbd0a 2px;
+}
