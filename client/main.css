@@ -10,6 +10,8 @@ body {
 	border: 2px solid purple;
 }
 
+/*--- Profile Button styles ---*/
+
 .profile-button-container {
 	position: absolute;
 	border: 3px solid #979797;
@@ -24,4 +26,43 @@ body {
 .profile-button {
 	width: auto;
 	height: 63px;
+}
+
+/*--- Search Bar styles ---*/
+
+.search-container {
+	width: 50%;
+	margin: auto;
+	position: relative;
+	margin-top: 20rem;
+    margin-bottom: 5rem;
+}
+
+input[type=text] {
+	width: 100%;
+	padding: 6px;
+	font-size: 17px;
+	border-radius: 30px;
+	border: 1px solid lightgray;
+	text-align: center;
+	color: dimgrey;
+	outline: none;
+}
+
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  background: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: calc(100% - 3px);
+  margin-top: 1px;
+}
+
+.search-container button:hover {
+  background: #ccc;
 }
