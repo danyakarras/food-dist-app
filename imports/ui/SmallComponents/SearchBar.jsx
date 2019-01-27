@@ -25,6 +25,7 @@ export default class SearchBar extends Component {
       <div className='search-container'>
         <form onSubmit={this.onFormSubmit}>
           <input
+          className='main-search-bar'
             type='text'
             placeholder='Search for restaurant'
             name='search'

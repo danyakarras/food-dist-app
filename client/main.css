@@ -124,7 +124,7 @@ body {
 	position: relative;
 }
 
-input[type=text] {
+input[type=text].main-search-bar {
 	width: 100%;
 	padding: 6px;
 	padding-left: 20px;
