@@ -40,6 +40,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
+  border-radius: 4px;
+  overflow: hidden;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   transition: ease all .4s;
 }
@@ -117,10 +119,11 @@ body {
 input[type=text] {
 	width: 100%;
 	padding: 6px;
+	padding-left: 20px;
 	font-size: 17px;
 	border-radius: 30px;
 	border: 1px solid lightgray;
-	text-align: center;
+	text-align: left;
 	color: dimgrey;
 	outline: none;
 }
