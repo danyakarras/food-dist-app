@@ -2,14 +2,18 @@ import React, { Component } from 'react';
 import Restaurant from '/imports/api/restaurant';
 
 export default class Form extends Component {
-  state = {
-    name: '',
-    email: '',
-    phone: ''
+  state = { name: '', email: '', phone: '' };
+
+  clearForm = () => {
+    this.setState({
+      name: '',
+      email: '',
+      phone: ''
+    });
   };
 
   onInputChange = event => {
-    let key = event.currentTarget.name;    
+    let key = event.currentTarget.name;
     let obj = {};
     obj[key] = event.target.value;
 
@@ -18,7 +22,15 @@ export default class Form extends Component {
 
   onFormSubmit = event => {
     event.preventDefault();
-    // TODO maybe this.props.someCallback();
+    
+    Restaurant.insert({
+      name: this.state.name,
+      email: this.state.email,
+      phone: this.state.phone,
+      createdAt: new Date()
+    });
+
+    this.clearForm();
   };
 
   onSubmit = () => {
@@ -51,7 +63,7 @@ export default class Form extends Component {
             onChange={this.onInputChange}
           />
 
-          <input type="submit" value="SUBMIT"/>
+          <input type='submit' value='SUBMIT' />
         </form>
       </div>
     );
