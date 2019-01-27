@@ -11,6 +11,7 @@ import Deal from '/imports/api/deal';
 export default class Home extends Component {
   state = {
     userId: null,
+    restaurants: [],
     deals: []
   };
 
@@ -22,20 +23,27 @@ export default class Home extends Component {
     this.fetchDeals();
   };
 
-  insertDealsSeedData = () => {
-    let start = new Date(new Date().setHours(15));
-    let end = new Date(new Date().setHours(17));
+  onRestaurantSearch = searchTerm => {
+    const searchResult = Restaurant.find({
+      name: { $regex: '.*' + searchTerm + '.*' }
+    }).fetch();
 
-    Deal.insert({
-      name: 'Amazing Sale',
-      restaurantId: this.state.userId,
-      price: 35.50,
-      priceUnit: 'lb',
-      startTime: start,
-      endTime: end,
-      quantity: 42,
-      description: 'Dolor sit amet'
+    this.setState({ restaurants: searchResult });
+    this.updateDeals();
+  };
+
+  updateDeals = () => {
+    let searchResult = [];
+
+    this.state.restaurants.forEach(restaurant => {
+      let found = Deal.find({
+        restaurantId: restaurant._id
+      }).fetch();
+
+      Array.prototype.push.apply(searchResult, found);
     });
+
+    this.setState({ deals: searchResult });
   };
 
   onUserLogout = () => {
@@ -99,7 +107,7 @@ export default class Home extends Component {
           </div>
           <img id="logo-image" src="/LOGOS-04.png" />
           <div className='home-search-container'>
-            <SearchBar />
+            <SearchBar onRestaurantSearch={this.onRestaurantSearch} />
           </div>
           <TagBar />
         </div>

@@ -6,25 +6,21 @@ import Deal from '/imports/api/deal';
 export default class SearchBar extends Component {
   state = { term: '' };
 
-  onFormSubmit = event => {
-    event.preventDefault();
-    console.log(
-      Restaurant.find({
-        name: { $regex: '.*' + this.state.term + '.*' }
-      }).fetch()
-    );
-  };
-
   onInputChange = event => {
     this.setState({ term: event.target.value });
   };
 
+  onRestaurantSearch = event => {
+    event.preventDefault();
+    this.props.onRestaurantSearch(this.state.term);
+  }
+
   render() {
     return (
       <div className='search-container'>
-        <form onSubmit={this.onFormSubmit}>
+        <form onSubmit={this.onRestaurantSearch}>
           <input
-			className='main-search-bar'
+            className='main-search-bar'
             type='text'
             placeholder='Search for restaurant'
             name='search'

@@ -328,6 +328,12 @@ input[type=text].main-search-bar {
   padding-right: 30px;
 }
 
+#logo-image-navbar {
+  width: 150px;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
 .activeLink {
   opacity: 1;
   font-weight: bold;
