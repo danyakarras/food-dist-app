@@ -1,6 +1,6 @@
 import React from 'react';
-import Home from './Home.jsx';
-import ProviderProfile from './ProviderProfile.jsx';
+import Home from './Pages/Home.jsx';
+import ProviderProfile from './Pages/ProviderProfile.jsx';
 
 const App = () => (
   <div>

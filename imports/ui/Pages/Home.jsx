@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import ProfileButton from './SmallComponents/ProfileButton.jsx';
-import SearchBar from './SmallComponents/SearchBar.jsx';
-import TagBar from './SmallComponents/TagBar.jsx';
-import Posting from './Posting.jsx';
-import Form from './Form.jsx';
+import ProfileButton from '../SmallComponents/ProfileButton.jsx';
+import SearchBar from '../SmallComponents/SearchBar.jsx';
+import TagBar from '../SmallComponents/TagBar.jsx';
+import Posting from '../Posting.jsx';
+import Form from '../Form.jsx';
 import GoogleAuth from '/imports/api/GoogleAuth';
 
 export default class Home extends Component {
