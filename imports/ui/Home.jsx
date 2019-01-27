@@ -14,7 +14,9 @@ export default class Home extends Component {
       <div>
         <div className="top-image">
         <Link to="/providerProfile">Provider Profile</Link>
-          <ProfileButton />
+          <div className="home-profile-button-container">
+            <ProfileButton />
+          </div>
           <div className="home-search-container">
             <SearchBar />
           </div>
