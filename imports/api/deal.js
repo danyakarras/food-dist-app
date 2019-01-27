@@ -7,5 +7,5 @@ Deal.schema = new SimpleSchema({
   menuId: { type: String },
   discount: { type: Number },
   validUntil: { type: Date },
-  quantity: { type: Number, optional: true }
+  quantity: { type: String, optional: true }
 });
