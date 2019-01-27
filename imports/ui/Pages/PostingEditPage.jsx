@@ -22,17 +22,17 @@ export default class PostingEditPage extends Component {
 		Deal.insert({
 			_id: this.props.userIdToken,
 			name: this.state.name,
-			email: this.state.email,
-			phone: this.state.phone,
+			price: this.state.price,
+			unit: this.state.unit,
+			quantity: this.state.quantity,
+			startTime: this.state.startTime,
+			endTime: this.state.endTime,
 			createdAt: new Date()
 		});
-
-		this.clearForm();
 	};
 
 	onSubmit = () => {
-		event.preventDefault();
-	    console.log(this.state);
+		console.log(Deal.find().fetch());
 	};
 
   render() {
