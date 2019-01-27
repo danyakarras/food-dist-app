@@ -122,7 +122,7 @@ export default class PostingEditPage extends Component {
                 onChange={this.onInputChange}
               />
             </div>
-            <input type='submit' value='SUBMIT' />
+            <input id="submit-button" type='submit' value='SUBMIT' />
           </form>
         </div>
       </div>

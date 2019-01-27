@@ -24,6 +24,17 @@ body {
 	font-family: 'Baloo', cursive;
 }
 
+#logo-image {
+	display: block;
+    width: 450px;
+    margin: auto;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    position: relative;
+    width: 550px;
+    padding-left: 6rem;
+}
+
 .top-image {
 	position: absolute;
     width: 100%;
@@ -107,18 +118,13 @@ body {
 
 /*--- Profile Button styles ---*/
 
-.home-profile-button-container {
-  position: absolute;
-  top: 47px;
-  right: 47px;
-}
-
 .profile-button-container {
   border: 3px solid #ffbd0a;
   width: 63px;
   height: 63px;
   overflow: hidden;
   border-radius: 50%;
+  display: inline-block;
 }
 
 .profile-button {
@@ -130,7 +136,6 @@ body {
 /*--- Search Bar styles ---*/
 
 .home-search-container {
-  margin-top: 20rem;
   margin-bottom: 2rem;
 }
 
@@ -312,6 +317,15 @@ input[type=text].main-search-bar {
   font-size: 15px;
   color: white;
   opacity: 0.6;
+  white-space: nowrap;
+}
+
+.home-navbar-container {
+  height: 6.5rem;
+  float: right;
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
 }
 
 .activeLink {
