@@ -3,6 +3,11 @@ body {
   margin: 0;
 }
 
+.page-width {
+	max-width: 908px;
+	margin: auto;
+}
+
 .top-image {
 	position: absolute;
     width: 100%;
@@ -181,4 +186,19 @@ input[type=text] {
 .tag-x {
 	width: 10px;
 	margin-left: 1rem;
+}
+
+/*--- New/Edit Posting styles ---*/
+
+#posting-image {
+	display: inline-block;
+	float: left;
+	height: 355px;
+	width: 331px;
+	background-image: url("gala-apples.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	color: white;
 }
