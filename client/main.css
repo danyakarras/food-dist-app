@@ -246,6 +246,7 @@ input[type=text].main-search-bar {
 	flex: 1;
 	font-family: Roboto;
 	margin: 0 2rem;
+	min-width: 300px;
 	max-width: 504px;
 	color: #c4c4c4;
 }

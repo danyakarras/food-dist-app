@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Deal from '/imports/api/deal';
 import NavBar from '../SmallComponents/NavBar.jsx';
 import { NavLink } from 'react-router-dom';
+import './newPosting.css';
 
 export default class PostingEditPage extends Component {
   state = {
@@ -52,67 +53,76 @@ export default class PostingEditPage extends Component {
             <img src='/gala-apples.jpg' />
           </div>
           <form id='posting-create-form' onSubmit={this.onSubmit}>
-            <div>Name</div>
-            <input
-              id='name'
-              name='name'
-              type='text'
-              className='edit-form baloo-font'
-              placeholder='Apples'
-              value={this.state.name}
-              onChange={this.onInputChange}
-            />
-            <div>Price</div>
-            $
-            <input
-              id='price'
-              name='price'
-              type='text'
-              className='edit-form baloo-font'
-              placeholder='00.50'
-              value={this.state.price}
-              onChange={this.onInputChange}
-            />
-            <div>Unit</div>
-            <input
-              id='unit'
-              name='unit'
-              type='text'
-              className='edit-form baloo-font'
-              placeholder='lb'
-              value={this.state.unit}
-              onChange={this.onInputChange}
-            />
-            <div>Quantity (optional)</div>
-            <input
-              id='quantity'
-              name='quantity'
-              type='text'
-              className='edit-form baloo-font'
-              placeholder='20lbs'
-              value={this.state.quantity}
-              onChange={this.onInputChange}
-            />
-            <div>Duration</div>
-            <input
-              id='startTime'
-              name='startTime'
-              type='text'
-              className='edit-form baloo-font'
-              placeholder='3:30PM'
-              value={this.state.startTime}
-              onChange={this.onInputChange}
-            />
-            <input
-              id='endTime'
-              name='endTime'
-              type='text'
-              className='edit-form baloo-font'
-              placeholder='6:30PM'
-              value={this.state.endTime}
-              onChange={this.onInputChange}
-            />
-            <input id="submit-button" type='submit' value='SUBMIT' />
+            <div className='w-100'>
+              <label>Name</label>
+              <input
+                id='name'
+                name='name'
+                type='text'
+                className='baloo-font edit-form input-text'
+                placeholder='Apples'
+                value={this.state.name}
+                onChange={this.onInputChange}
+              />
+            </div>
+            <div className='w-45'>
+              <label>Price / Unit</label>
+              $
+              <input
+                id='price'
+                name='price'
+                type='text'
+                className='baloo-font edit-form input-text w-25'
+                placeholder='00.50'
+                value={this.state.price}
+                onChange={this.onInputChange}
+              />
+              /
+              <input
+                id='unit'
+                name='unit'
+                type='text'
+                className='baloo-font edit-form input-text w-25'
+                placeholder='lb'
+                value={this.state.unit}
+                onChange={this.onInputChange}
+              />
+            </div>
+            <div className='w-45'>
+              <label>Quantity (optional)</label>
+              <input
+                id='quantity'
+                name='quantity'
+                type='text'
+                className='baloo-font edit-form input-text'
+                placeholder='20lbs'
+                value={this.state.quantity}
+                onChange={this.onInputChange}
+              />
+            </div>
+            <div className='w-100'>
+              <label>Duration</label>
+              <input
+                id='startTime'
+                name='startTime'
+                type='text'
+                className='baloo-font edit-form input-text w-25'
+                placeholder='3:30PM'
+                value={this.state.startTime}
+                onChange={this.onInputChange}
+              />
+              -
+              <input
+                id='endTime'
+                name='endTime'
+                type='text'
+                className='baloo-font edit-form input-text w-25'
+                placeholder='6:30PM'
+                value={this.state.endTime}
+                onChange={this.onInputChange}
+              />
+            </div>
+            <input type='submit' value='SUBMIT' />
           </form>
         </div>
       </div>
