@@ -4,10 +4,17 @@ body {
 }
 
 .top-image {
-	position: relative;
+	position: absolute;
+    width: 100%;
 	height: 30rem;
 	background-image: url("agriculture-bunch-cooking-606540.jpg");
 	background-size: cover;
+}
+
+.postings-container {
+	position: absolute;
+    margin-top: 33rem;
+    min-height: 20rem;
 }
 
 .posting-card {
@@ -39,13 +46,12 @@ body {
 /*--- Search Bar styles ---*/
 
 .search-container {
-	display: inline-block;
 	width: 50%;
+	max-width: 370px;
 	margin: auto;
 	position: relative;
 	margin-top: 20rem;
-    margin-bottom: 5rem;
-    margin-left: 25%;
+    margin-bottom: 2rem;
 }
 
 input[type=text] {
@@ -80,4 +86,31 @@ input[type=text] {
 .search-img {
 	width: 20px;
 	transition: opacity 500ms;
+}
+
+/*--- Tag styles ---*/
+.tagbar {
+	width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.tag {
+	display: inline-block;
+    background-color: #7f3f3f;
+    padding: 10px 16px;
+    margin: 0 0.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.tag-text {
+	color: white;
+	font-size: 14px;
+}
+
+.tag-x {
+	width: 10px;
+	margin-left: 1rem;
 }
