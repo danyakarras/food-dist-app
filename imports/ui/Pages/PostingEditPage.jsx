@@ -1,31 +1,29 @@
 import React, { Component } from 'react';
 
 export default class PostingEditPage extends Component {
-	state = { 	name: '', 
-				email: '', 
-				phone: '' };
+  state = { name: '', email: '', phone: '' };
 
-	onInputChange = event => {
-	    let key = event.currentTarget.name;
-	    let obj = {};
-	    obj[key] = event.target.value;
+  onInputChange = event => {
+    let key = event.currentTarget.name;
+    let obj = {};
+    obj[key] = event.target.value;
 
-	    this.setState(obj);
-	  };
+    this.setState(obj);
+  };
 
-	onSubmit = () => {
-		event.preventDefault();
-	    console.log(this.state);
-	};
+  onSubmit = () => {
+    event.preventDefault();
+    console.log(this.state);
+  };
 
   render() {
     return (
-      <div className="page-width">
+      <div className='page-width'>
         <h1>Hello World</h1>
-        <div id="posting-image">
-        	<img src='/gala-apples.jpg'/>
+        <div id='posting-image'>
+          <img src='/gala-apples.jpg' />
         </div>
-        <form id="posting-create-form" onSubmit={this.onSubmit}>
+        <form id='posting-create-form' onSubmit={this.onSubmit}>
           <input
             id='name'
             name='name'
