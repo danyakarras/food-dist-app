@@ -15,6 +15,10 @@ body {
 	position: absolute;
     margin-top: 33rem;
     min-height: 20rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .left {
@@ -36,6 +40,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
+  border-radius: 4px;
+  overflow: hidden;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   transition: ease all .4s;
 }
@@ -98,22 +104,26 @@ body {
 
 /*--- Search Bar styles ---*/
 
+.home-search-container {
+  margin-top: 20rem;
+  margin-bottom: 2rem;
+}
+
 .search-container {
 	width: 50%;
 	max-width: 370px;
 	margin: auto;
 	position: relative;
-	margin-top: 20rem;
-    margin-bottom: 2rem;
 }
 
 input[type=text] {
 	width: 100%;
 	padding: 6px;
+	padding-left: 20px;
 	font-size: 17px;
 	border-radius: 30px;
 	border: 1px solid lightgray;
-	text-align: center;
+	text-align: left;
 	color: dimgrey;
 	outline: none;
 }
@@ -143,10 +153,11 @@ input[type=text] {
 
 /*--- Tag styles ---*/
 .tagbar {
-	width: 50%;
+	max-width: 500px;
     margin: auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .tag {
@@ -156,6 +167,7 @@ input[type=text] {
     margin: 0 0.5rem;
     border-radius: 20px;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
 }
 
 .tag-text {
