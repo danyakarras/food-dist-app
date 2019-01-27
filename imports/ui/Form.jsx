@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import Restaurant from '/imports/api/restaurant';
 
 export default class Form extends Component {
-  state = { name: '', email: '', phone: '' };
+  state = {
+    name: '',
+    email: '',
+    phone: ''
+  };
 
   clearForm = () => {
     this.setState({
@@ -22,8 +26,9 @@ export default class Form extends Component {
 
   onFormSubmit = event => {
     event.preventDefault();
-    
+
     Restaurant.insert({
+      _id: this.props.userIdToken,
       name: this.state.name,
       email: this.state.email,
       phone: this.state.phone,

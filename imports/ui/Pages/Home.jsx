@@ -8,6 +8,21 @@ import Form from '../Form.jsx';
 import GoogleAuth from '/imports/api/GoogleAuth';
 
 export default class Home extends Component {
+  state = {
+    userId: null
+  }
+
+  onUserLogin = idToken => {
+    this.setState({
+      userId: idToken
+    })
+  }
+
+  onUserLogout = () => {
+    this.setState({
+      userId: null
+    });
+  }
 
   render() {
     return (
@@ -27,8 +42,8 @@ export default class Home extends Component {
           <Posting name="Gala Apples" restaurant="Walmart" time="until 5pm" price="$0.50 /lb" quantity="3" address="12 blank street"/>
           <Posting name="Gala Apples" restaurant="Walmart" time="until 5pm" price="$0.50 /lb" quantity="2" address="12 blank street"/>
         </div>
-        <Form />
-        <GoogleAuth />
+        <Form userIdToken={this.state.userId} />
+        <GoogleAuth onUserLogin={this.onUserLogin} onUserLogout={this.onUserLogout} />
       </div>
     );
   }
