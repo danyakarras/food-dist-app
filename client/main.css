@@ -15,6 +15,10 @@ body {
 	position: absolute;
     margin-top: 33rem;
     min-height: 20rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .left {
@@ -143,10 +147,11 @@ input[type=text] {
 
 /*--- Tag styles ---*/
 .tagbar {
-	width: 50%;
+	max-width: 500px;
     margin: auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .tag {
@@ -156,6 +161,7 @@ input[type=text] {
     margin: 0 0.5rem;
     border-radius: 20px;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
 }
 
 .tag-text {
