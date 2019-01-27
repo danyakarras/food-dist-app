@@ -73,7 +73,7 @@ export default class Home extends Component {
     return (
       <div>
         <div className='top-image'>
-          <div className="home-profile-button-container">
+          <div className="home-navbar-container">
             <NavLink
               to='/home'
               className='navbar-link'
