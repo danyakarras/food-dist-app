@@ -19,6 +19,7 @@ body {
 	height: 30rem;
 	background-image: url("agriculture-bunch-cooking-606540.jpg");
 	background-size: cover;
+	background-position: bottom;
 }
 
 .postings-container {
@@ -181,6 +182,10 @@ input[type=text].main-search-bar {
     border-radius: 20px;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
     white-space: nowrap;
+}
+
+.tag:hover {
+	opacity: 0.5;
 }
 
 .tag-text {
