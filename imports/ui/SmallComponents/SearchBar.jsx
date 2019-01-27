@@ -7,7 +7,7 @@ export default class SearchBar extends Component {
       <div class="search-container">
 	    <form>
 	      <input type="text" placeholder="Search.." name="search"/>
-	      <button type="submit"><img src="/magnifying-glass.svg"/></button>
+	      <button type="submit"><img className="search-img" src="/magnifying-glass.svg"/></button>
 	    </form>
 	  </div>
     );

@@ -9,8 +9,10 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <ProfileButton />
-        <SearchBar />
+        <div className="top-image">
+          <ProfileButton />
+          <SearchBar />
+        </div>
         <Posting />
         <Posting />
         <Posting />
