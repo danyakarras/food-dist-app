@@ -58,7 +58,7 @@ export default class Home extends Component {
         <Posting
           key={deal._id}
           name={deal.name}
-          restaurant={deal.restaurantId}
+          restaurantId={deal.restaurantId}
           price={deal.price}
           priceUnit={deal.priceUnit}
           startTime={deal.startTime}
