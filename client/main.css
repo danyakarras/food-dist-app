@@ -102,13 +102,16 @@ body {
 
 /*--- Search Bar styles ---*/
 
+.home-search-container {
+  margin-top: 20rem;
+  margin-bottom: 2rem;
+}
+
 .search-container {
 	width: 50%;
 	max-width: 370px;
 	margin: auto;
 	position: relative;
-	margin-top: 20rem;
-    margin-bottom: 2rem;
 }
 
 input[type=text] {
