@@ -9,30 +9,31 @@ export default class PostingEditPage extends Component {
 				startTime: '',
 				endTime: '' };
 
-  onInputChange = event => {
-    let key = event.currentTarget.name;
-    let obj = {};
-    obj[key] = event.target.value;
+	onInputChange = event => {
+		let key = event.currentTarget.name;
+		let obj = {};
+		obj[key] = event.target.value;
 
-    this.setState(obj);
-  };
+		this.setState(obj);
+	};
 
 	onFormSubmit = event => {
 		event.preventDefault();
 
 		Deal.insert({
-			_id: this.props.userIdToken,
+			_id: 5,
+			restaurantId: 5,
 			name: this.state.name,
 			price: this.state.price,
-			unit: this.state.unit,
+			priceUnit: this.state.unit,
 			quantity: this.state.quantity,
 			startTime: this.state.startTime,
-			endTime: this.state.endTime,
-			createdAt: new Date()
+			endTime: this.state.endTime
 		});
 	};
 
 	onSubmit = () => {
+		event.preventDefault();
 		console.log(Deal.find().fetch());
 	};
 
