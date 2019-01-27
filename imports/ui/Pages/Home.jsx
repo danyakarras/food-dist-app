@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import ProfileButton from '../SmallComponents/ProfileButton.jsx';
 import SearchBar from '../SmallComponents/SearchBar.jsx';
 import TagBar from '../SmallComponents/TagBar.jsx';
@@ -28,8 +28,11 @@ export default class Home extends Component {
     return (
       <div>
         <div className="top-image">
-        <Link to="/providerProfile">Provider Profile</Link>
-        <Link to="/newPosting">New Posting!</Link>
+          <div>
+            <NavLink to="/home" className="navbar-link" activeClassName="activeLink">Home</NavLink>
+            <NavLink to="/providerProfile" className="navbar-link"  activeClassName="activeLink">Provider</NavLink>
+            <NavLink to="/newPosting" className="navbar-link" activeClassName="activeLink">New Posting!</NavLink>
+          </div>
           <div className="home-profile-button-container">
             <ProfileButton />
           </div>

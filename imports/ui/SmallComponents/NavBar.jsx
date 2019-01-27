@@ -13,6 +13,7 @@ export default class NavBar extends Component {
         </div>
         <NavLink to="/home" className="navbar-link" activeClassName="activeLink">Home</NavLink>
         <NavLink to="/providerProfile" className="navbar-link"  activeClassName="activeLink">Provider</NavLink>
+        <NavLink to="/newPosting" className="navbar-link" activeClassName="activeLink">New Posting!</NavLink>
         <div className="navbar-profile-button-continer">
           <ProfileButton />
         </div>
