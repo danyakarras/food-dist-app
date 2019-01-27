@@ -4,7 +4,6 @@ import ProfileButton from '../SmallComponents/ProfileButton.jsx';
 import SearchBar from '../SmallComponents/SearchBar.jsx';
 import TagBar from '../SmallComponents/TagBar.jsx';
 import Posting from '../Posting.jsx';
-import Form from '../Form.jsx';
 import GoogleAuth from '/imports/api/GoogleAuth';
 import Deal from '/imports/api/deal';
 
@@ -112,7 +111,6 @@ export default class Home extends Component {
           <TagBar />
         </div>
         <div className='postings-container'>{this.renderPostingCards()}</div>
-        <Form userIdToken={this.state.userId} />
         <GoogleAuth
           onUserLogin={this.onUserLogin}
           onUserLogout={this.onUserLogout}
