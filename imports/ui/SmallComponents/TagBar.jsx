@@ -6,7 +6,7 @@ export default class TagBar extends Component {
   render() {
     return (
       <div className="tagbar">
-        <Tag /> <Tag /> <Tag />
+        <Tag text="produce" color="#88ab75"/> <Tag text="vegetarian" color="#5b8260"/> <Tag text="meals" color="#7f3f3f"/>
       </div>
     );
   }

@@ -65,19 +65,19 @@ export default class PostingEditPage extends Component {
                 onChange={this.onInputChange}
               />
             </div>
-            <div className='w-45'>
+            <div className='w-70'>
               <label>Price / Unit</label>
-              $
+              <span className="rando-text no-left-padding">$</span>
               <input
                 id='price'
                 name='price'
                 type='text'
-                className='baloo-font edit-form input-text w-25'
+                className='baloo-font edit-form input-text w-45'
                 placeholder='00.50'
                 value={this.state.price}
                 onChange={this.onInputChange}
               />
-              /
+              <span className="rando-text">/</span>
               <input
                 id='unit'
                 name='unit'
@@ -111,7 +111,7 @@ export default class PostingEditPage extends Component {
                 value={this.state.startTime}
                 onChange={this.onInputChange}
               />
-              -
+              <span className="rando-text">-</span>
               <input
                 id='endTime'
                 name='endTime'
