@@ -4,7 +4,8 @@ import Credentials from './GoogleAuthCredentials.json';
 class GoogleAuth extends React.Component {
   state = {
     auth: null,
-    isSignedIn: null
+    isSignedIn: null,
+    userId: null
   };
 
   componentDidMount() {
@@ -17,7 +18,11 @@ class GoogleAuth extends React.Component {
         .then(() => {
           this.setState({
             auth: gapi.auth2.getAuthInstance(),
-            isSignedIn: gapi.auth2.getAuthInstance().isSignedIn.get()
+            isSignedIn: gapi.auth2.getAuthInstance().isSignedIn.get(),
+            userId: gapi.auth2
+              .getAuthInstance()
+              .currentUser.get()
+              .getId()
           });
         });
     });
