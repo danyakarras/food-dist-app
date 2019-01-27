@@ -31,7 +31,10 @@ body {
   margin: 1.3rem;
   height: 10.5rem;
   width: 12.8rem;
-  background-color: lightgrey;
+  background-image: url("gala-apples.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   transition: ease all .4s;
