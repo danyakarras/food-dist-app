@@ -13,9 +13,9 @@ export default class Home extends Component {
           <ProfileButton />
           <SearchBar />
         </div>
-        <Posting />
-        <Posting />
-        <Posting />
+        <Posting name="Gala Apples" restaurant="Walmart" time="until 5pm" price="$0.50 /lb" quantity="4" address="12 blank street"/>
+        <Posting name="Gala Apples" restaurant="Walmart" time="until 5pm" price="$0.50 /lb" quantity="3" address="12 blank street"/>
+        <Posting name="Gala Apples" restaurant="Walmart" time="until 5pm" price="$0.50 /lb" quantity="2" address="12 blank street"/>
 
         <Form />
       </div>
