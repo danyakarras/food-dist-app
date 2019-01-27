@@ -145,7 +145,7 @@ body {
 
 .search-container {
 	width: 50%;
-	max-width: 370px;
+	max-width: 450px;
 	margin: auto;
 	position: relative;
 }
@@ -196,7 +196,6 @@ input[type=text].main-search-bar {
 
 .tag {
 	display: inline-block;
-    background-color: #7f3f3f;
     padding: 10px 16px;
     margin: 0 0.5rem;
     border-radius: 20px;
@@ -347,6 +346,7 @@ input[type=text].main-search-bar {
 
 /*--- Restaurant page styles ---*/
 #restaurant-info-card {
+	height: 492px;
 	width: 274px;
 	border-radius: 9px;
   	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
@@ -434,4 +434,15 @@ input[type=text].main-search-bar {
 
 .hidden {
 	display: none;
+}
+
+.rando-text {
+	font-family: Baloo;
+    font-size: 30px;
+    color: #333;
+    padding: 0 1rem;
+}
+
+.no-left-padding {
+	padding-left: 0;
 }
