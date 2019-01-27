@@ -4,17 +4,74 @@ body {
 }
 
 .top-image {
-	position: relative;
+	position: absolute;
+    width: 100%;
 	height: 30rem;
 	background-image: url("agriculture-bunch-cooking-606540.jpg");
 	background-size: cover;
 }
 
+.postings-container {
+	position: absolute;
+    margin-top: 33rem;
+    min-height: 20rem;
+}
+
+.left {
+  float:left;
+}
+
+.right {
+  float:right;
+}
+
 .posting-card {
-	display: inline-block;
-	height: 10rem;
-	width: 10rem;
-	border: 2px solid purple;
+  display: inline-block;
+  position: relative;
+  margin: 1.3rem;
+  height: 10.5rem;
+  width: 12.8rem;
+  background-color: lightgrey;
+  color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  transition: ease all .4s;
+}
+
+.posting-name {
+  display: block;
+  bottom: 0;
+  position: absolute;
+  box-sizing: border-box;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 35px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.posting-top {
+  font-size: 10px;
+}
+
+.posting-bottom {
+  display: block;
+  bottom: 0;
+  position: absolute;
+  box-sizing: border-box;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+  background-color: #88ab75;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .posting-card {
+  margin: 0.7rem;
+  }
 }
 
 /*--- Profile Button styles ---*/
@@ -39,13 +96,12 @@ body {
 /*--- Search Bar styles ---*/
 
 .search-container {
-	display: inline-block;
 	width: 50%;
+	max-width: 370px;
 	margin: auto;
 	position: relative;
 	margin-top: 20rem;
-    margin-bottom: 5rem;
-    margin-left: 25%;
+    margin-bottom: 2rem;
 }
 
 input[type=text] {
@@ -80,4 +136,31 @@ input[type=text] {
 .search-img {
 	width: 20px;
 	transition: opacity 500ms;
+}
+
+/*--- Tag styles ---*/
+.tagbar {
+	width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.tag {
+	display: inline-block;
+    background-color: #7f3f3f;
+    padding: 10px 16px;
+    margin: 0 0.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.tag-text {
+	color: white;
+	font-size: 14px;
+}
+
+.tag-x {
+	width: 10px;
+	margin-left: 1rem;
 }

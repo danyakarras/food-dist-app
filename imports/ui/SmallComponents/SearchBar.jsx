@@ -11,7 +11,7 @@ export default class SearchBar extends Component {
     event.preventDefault();
     console.log(
       Restaurant.find({
-        name: {$regex : ".*" + this.state.term + ".*"}
+        name: { $regex: '.*' + this.state.term + '.*' }
       }).fetch()
     );
   };
@@ -26,7 +26,7 @@ export default class SearchBar extends Component {
         <form onSubmit={this.onFormSubmit}>
           <input
             type='text'
-            placeholder='Search..'
+            placeholder='Search for restaurant'
             name='search'
             value={this.state.term}
             onChange={this.onInputChange}
