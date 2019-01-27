@@ -7,9 +7,10 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #c4c4c4;
+  color: #88ab75;
   border: 0;
   border-bottom: 1px solid #d8d8d8;
+  outline: none;
 }
 
 .w-100 {
