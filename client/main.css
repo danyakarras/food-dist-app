@@ -8,6 +8,10 @@ body {
 	margin: auto;
 }
 
+.baloo-font {
+	font-family: 'Baloo', cursive;
+}
+
 .top-image {
 	position: absolute;
     width: 100%;
@@ -202,3 +206,11 @@ input[type=text].main-search-bar {
 	overflow: hidden;
 	color: white;
 }
+
+#posting-create-form {
+	display: inline-block;
+	margin: 0 2rem; 
+	max-width: 504px;
+}
+
+
