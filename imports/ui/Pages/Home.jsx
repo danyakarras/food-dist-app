@@ -6,22 +6,34 @@ import TagBar from '../SmallComponents/TagBar.jsx';
 import Posting from '../Posting.jsx';
 import Form from '../Form.jsx';
 import GoogleAuth from '/imports/api/GoogleAuth';
+import Deal from '/imports/api/deal';
 
 export default class Home extends Component {
   state = {
-    userId: null
+    userId: null,
+    deals: null
   }
 
   onUserLogin = idToken => {
     this.setState({
       userId: idToken
     })
+
+    this.fetchDeals();
   }
 
   onUserLogout = () => {
     this.setState({
       userId: null
     });
+  }
+
+  fetchDeals = () => {
+    const data = Deal.find().fetch();
+
+    this.setState({
+      deals: data
+    })
   }
 
   render() {
