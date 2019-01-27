@@ -11,7 +11,7 @@ import Deal from '/imports/api/deal';
 export default class Home extends Component {
   state = {
     userId: null,
-    deals: null
+    deals: []
   };
 
   onUserLogin = idToken => {
@@ -20,8 +20,6 @@ export default class Home extends Component {
     });
 
     this.fetchDeals();
-    
-    console.log(this.state);
   };
 
   insertDealsSeedData = () => {
@@ -54,18 +52,22 @@ export default class Home extends Component {
     });
   };
 
-  renderPostingCards = () => {
-    return (
-      <Posting
-        name='Gala Apples'
-        restaurant='Walmart'
-        time='until 5pm'
-        price='$0.50 /lb'
-        quantity='3'
-        address='12 blank street'
-      />
-    );
-  };
+  renderPostingCards = () =>
+    this.state.deals.map(deal => {
+      return (
+        <Posting
+          key={deal._id}
+          name={deal.name}
+          restaurant={deal.restaurantId}
+          price={deal.price}
+          priceUnit={deal.priceUnit}
+          startTime={deal.startTime}
+          endTime={deal.endTime}
+          quantity={deal.name}
+          description={deal.description}
+        />
+      );
+    });
 
   render() {
     return (
