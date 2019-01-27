@@ -328,8 +328,101 @@ input[type=text].main-search-bar {
   padding-right: 30px;
 }
 
+#logo-image-navbar {
+  width: 150px;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
 .activeLink {
   opacity: 1;
   font-weight: bold;
   border-bottom: solid #ffbd0a 2px;
+}
+
+/*--- Restaurant page styles ---*/
+#restaurant-info-card {
+	width: 274px;
+	border-radius: 9px;
+  	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  	background-color: #ffffff;
+  	overflow: hidden;
+  	margin-top: 3rem;
+}
+
+#restaurant-pic {
+	height: 264px;
+	background-image: url("agriculture-basket-beets-533360.jpg");
+	background-size: cover;
+	background-position-x: center;
+
+}
+
+#store-info-box {
+	padding: 1rem;
+}
+
+.store-name {
+	font-size: 26px;
+    font-weight: bold;
+}
+
+.store-address {
+	font-family: "Open Sans";
+	font-size: 12px;
+    padding: 0.5rem 0;
+}
+
+.store-address-pointer {
+	width: 20px;
+    float: left;
+    padding-right: 1rem;
+}
+
+.store-followers {
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 600;
+  color: #b9b8b8;
+}
+
+.follower-img {
+	height: 16px;
+    float: left;
+    padding-right: 1rem;
+}
+
+#manage-discounts {
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #a7a7a7;
+  padding: 0.5rem 0;
+  border-top: 2px solid #dbdbdb;
+}
+
+#add-discount {
+	height: 46px;
+	padding-top: 14px;
+    background-color: #5b8260;
+    text-align: center;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+}
+
+.add-discount-text {
+	color: white;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#postings-div {
+	margin-top: 1.7rem;
+	flex: 1;
+	max-width: 500px;
+	padding: 0 2rem;
 }

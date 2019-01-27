@@ -8,6 +8,7 @@ export default class NavBar extends Component {
   render() {
     return (
       <div className="navbar">
+        <img id="logo-image-navbar" src="/LOGOS-04.png" />
         <div className="navbar-search-container">
           <SearchBar />
         </div>
