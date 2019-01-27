@@ -73,7 +73,7 @@ export default class Home extends Component {
     return (
       <div>
         <div className='top-image'>
-          <div>
+          <div className="home-profile-button-container">
             <NavLink
               to='/home'
               className='navbar-link'
@@ -95,8 +95,6 @@ export default class Home extends Component {
             >
               New Posting!
             </NavLink>
-          </div>
-          <div className='home-profile-button-container'>
             <ProfileButton />
           </div>
           <div className='home-search-container'>
