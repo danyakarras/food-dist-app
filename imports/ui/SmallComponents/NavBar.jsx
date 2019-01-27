@@ -8,7 +8,9 @@ export default class NavBar extends Component {
   render() {
     return (
       <div className="navbar">
-        <img id="logo-image-navbar" src="/LOGOS-04.png" />
+        <a href="/home">
+          <img id="logo-image-navbar" src="/LOGOS-04.png" />
+        </a>
         <div className="navbar-search-container">
           <SearchBar />
         </div>
