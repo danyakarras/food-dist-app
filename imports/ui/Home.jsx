@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import ProfileButton from './SmallComponents/ProfileButton.jsx';
 import SearchBar from './SmallComponents/SearchBar.jsx';
 import TagBar from './SmallComponents/TagBar.jsx';
@@ -11,6 +12,7 @@ export default class Home extends Component {
     return (
       <div>
         <div className="top-image">
+        <Link to="/providerProfile">Provider Profile</Link>
           <ProfileButton />
           <SearchBar />
           <TagBar />
