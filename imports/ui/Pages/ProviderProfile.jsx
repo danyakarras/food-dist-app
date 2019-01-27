@@ -46,7 +46,7 @@ export default class ProviderProfile extends Component {
           priceUnit={deal.priceUnit}
           startTime={deal.startTime}
           endTime={deal.endTime}
-          quantity={deal.name}
+          quantity={deal.quantity}
           description={deal.description}
         />
       );
