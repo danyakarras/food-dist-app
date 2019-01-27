@@ -7,6 +7,8 @@ Deal.schema = new SimpleSchema({
   restaurantId: { type: String },
   price: { type: Number },
   priceUnit: { type: String },
-  validUntil: { type: Date },
-  quantity: { type: String, optional: true }
+  startTime: { type: Date },
+  endTime: { type: Date },
+  quantity: { type: String, optional: true },
+  description: { type: String, optional: true }
 });
