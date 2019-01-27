@@ -99,6 +99,7 @@ export default class Home extends Component {
           <div className='home-profile-button-container'>
             <ProfileButton />
           </div>
+          <img id="logo-image" src="/LOGOS-04.png" />
           <div className='home-search-container'>
             <SearchBar />
           </div>
