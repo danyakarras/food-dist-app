@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 export default class PostingEditPage extends Component {
+
 	state = { 	name: '', 
 				price: '', 
 				unit: '',
@@ -8,13 +9,13 @@ export default class PostingEditPage extends Component {
 				startTime: '',
 				endTime: '' };
 
-	onInputChange = event => {
-	    let key = event.currentTarget.name;
-	    let obj = {};
-	    obj[key] = event.target.value;
+  onInputChange = event => {
+    let key = event.currentTarget.name;
+    let obj = {};
+    obj[key] = event.target.value;
 
-	    this.setState(obj);
-	  };
+    this.setState(obj);
+  };
 
 	onFormSubmit = event => {
 		event.preventDefault();
@@ -37,10 +38,10 @@ export default class PostingEditPage extends Component {
 
   render() {
     return (
-      <div className="page-width">
+      <div className='page-width'>
         <h1>Hello World</h1>
-        <div id="posting-image">
-        	<img src='/gala-apples.jpg'/>
+        <div id='posting-image'>
+          <img src='/gala-apples.jpg' />
         </div>
         <form id="posting-create-form" onSubmit={this.onSubmit}>
         	<label>Name</label>
