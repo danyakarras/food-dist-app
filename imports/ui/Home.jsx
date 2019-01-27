@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ProfileButton from './SmallComponents/ProfileButton.jsx';
 import SearchBar from './SmallComponents/SearchBar.jsx';
 import Posting from './Posting.jsx';
+import Form from './Form.jsx';
 
 export default class Home extends Component {
 
@@ -13,6 +14,8 @@ export default class Home extends Component {
         <Posting />
         <Posting />
         <Posting />
+
+        <Form />
       </div>
     );
   }
