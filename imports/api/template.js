@@ -5,7 +5,6 @@ export default Template = new Mongo.Collection('template');
 Template.schema = new SimpleSchema({
   restaurantId: { type: String },
   name: { type: String },
-  price: { type: Number }
+  price: { type: Number },
+  priceUnit: { type: String }
 });
-
-// this Template schema can potentially contain photo
