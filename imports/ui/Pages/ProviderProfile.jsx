@@ -84,6 +84,7 @@ export default class ProviderProfile extends Component {
           </div>
         </div>
         <GoogleAuth
+          className="hidden"
           onUserLogin={this.onUserLogin}
           onUserLogout={this.onUserLogout}
         />

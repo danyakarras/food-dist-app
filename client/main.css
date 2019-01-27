@@ -79,6 +79,10 @@ body {
   transition: ease all .4s;
 }
 
+.posting-card:hover {
+	transform: translate(0, -5px);
+}
+
 .posting-name {
   display: block;
   bottom: 0;
@@ -316,7 +320,7 @@ input[type=text].main-search-bar {
   text-decoration: none;
   font-size: 15px;
   color: white;
-  opacity: 0.6;
+  opacity: 0.8;
   white-space: nowrap;
 }
 
@@ -425,4 +429,8 @@ input[type=text].main-search-bar {
 	flex: 1;
 	max-width: 500px;
 	padding: 0 2rem;
+}
+
+.hidden {
+	display: none;
 }
